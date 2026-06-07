@@ -8,7 +8,7 @@ export default function Home() {
       {/* Section 1: Hero */}
       <section id="hero" className="min-h-screen w-full flex items-center px-[10%]">
         <div className="max-w-[800px]">
-          <h1 className="magic-text font-heading whitespace-nowrap mb-4">Cloud Nova Solutions</h1>
+          <h1 className="magic-text font-heading mb-4 leading-tight">Cloud Nova Solutions</h1>
           <p className="text-xl text-[#ccc] font-light leading-relaxed">
             A technology-driven company specializing in modern website development, mobile applications, cloud solutions, and AI-powered digital transformation. We believe in transforming your ideas to digital growth.
             <br />
@@ -25,7 +25,7 @@ export default function Home() {
       {/* Section 2: About / Mission & Vision */}
       <section id="about" className="min-h-screen w-full flex items-center justify-end px-[10%]">
         <div className="max-w-[800px] w-full bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-[20px] shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-400 hover:-translate-y-[10px] hover:shadow-[0_30px_60px_rgba(0,229,255,0.2)] hover:border-[#00e5ff]/30">
-          <h2 className="magic-text-secondary font-heading whitespace-nowrap mb-8">Mission and Vision</h2>
+          <h2 className="magic-text-secondary font-heading mb-8 leading-tight">Mission and Vision</h2>
           
           <h3 className="text-[#00e5ff] text-xl mb-2 font-bold">Our Mission</h3>
           <p className="text-[#ccc] text-base mb-6">
@@ -51,7 +51,7 @@ export default function Home() {
       <section id="why-us-process" className="min-h-screen w-full flex items-center justify-center px-[10%]">
         <div className="max-w-[1200px] w-full flex flex-wrap gap-8 justify-between">
           <div className="flex-1 min-w-[300px] bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-[20px] shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-400 hover:-translate-y-[10px] hover:shadow-[0_30px_60px_rgba(0,229,255,0.2)] hover:border-[#00e5ff]/30">
-            <h2 className="magic-text-secondary font-heading whitespace-nowrap mb-8 text-[clamp(2rem,4vw,3.5rem)]">Why Choose Us</h2>
+            <h2 className="magic-text-secondary font-heading mb-8 text-[clamp(2rem,4vw,3.5rem)] leading-tight">Why Choose Us</h2>
             <ul className="list-none space-y-4">
               <li className="relative pl-6 before:content-['→'] before:absolute before:left-0 before:text-[#00e5ff]"><strong className="text-[#00e5ff]">Innovation:</strong> We use the latest technologies to build modern digital experiences.</li>
               <li className="relative pl-6 before:content-['→'] before:absolute before:left-0 before:text-[#00e5ff]"><strong className="text-[#00e5ff]">Client Focused:</strong> Every project is tailored to meet your business goals.</li>
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
 
           <div className="flex-1 min-w-[300px] bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-[20px] shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-400 hover:-translate-y-[10px] hover:shadow-[0_30px_60px_rgba(0,229,255,0.2)] hover:border-[#00e5ff]/30">
-            <h2 className="magic-text-secondary font-heading whitespace-nowrap mb-8 text-[clamp(2rem,4vw,3.5rem)]">How We Work</h2>
+            <h2 className="magic-text-secondary font-heading mb-8 text-[clamp(2rem,4vw,3.5rem)] leading-tight">How We Work</h2>
             <ul className="list-none space-y-4">
               <li className="relative pl-6 before:content-['→'] before:absolute before:left-0 before:text-[#00e5ff]"><strong className="text-[#00e5ff]">Planning & Strategy:</strong> Understanding your business goals and project requirements.</li>
               <li className="relative pl-6 before:content-['→'] before:absolute before:left-0 before:text-[#00e5ff]"><strong className="text-[#00e5ff]">Design & Development:</strong> Creating visually stunning and high-performance digital products.</li>
