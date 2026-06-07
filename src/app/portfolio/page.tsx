@@ -7,7 +7,7 @@ export default function PortfolioPage() {
 	// Let's use some cool tech-themed Unsplash images for the portfolio
 	const images = [
 		{
-			src: asset('/assets/portfolio_1.png'),
+			src: asset('/assets/portfolio_1.mp4'),
 			alt: 'Portfolio Project 1',
 		},
 		{
