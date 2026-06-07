@@ -145,11 +145,11 @@ body {
   content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 50%; background: #fff; animation: scrollDown 2s infinite;
 }
 
-@keyframes spin { 
+@keyframes orbit-spin { 
   0% { transform: translate(-50%, -50%) rotate(0deg); }
   100% { transform: translate(-50%, -50%) rotate(360deg); } 
 }
-@keyframes anti-spin { 
+@keyframes orbit-anti-spin { 
   0% { transform: translate(-50%, -50%) rotate(0deg); }
   100% { transform: translate(-50%, -50%) rotate(-360deg); } 
 }

@@ -21,11 +21,11 @@ export default function OrbitalSystem() {
 
         <div
           className="absolute top-1/2 left-1/2 border border-white/10 rounded-full w-[300px] h-[300px] pointer-events-none"
-          style={{ transform: "translate(-50%, -50%)", animation: `spin 20s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
+          style={{ transform: "translate(-50%, -50%)", animation: `orbit-spin 20s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
         >
           <div
             className="absolute top-0 left-1/2 cursor-pointer group pointer-events-auto"
-            style={{ transform: "translate(-50%, -50%)", animation: `anti-spin 20s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
+            style={{ transform: "translate(-50%, -50%)", animation: `orbit-anti-spin 20s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
             onClick={() => setModalData({ title: "Web Development", desc: "We create high-performance, cinematic websites leveraging modern stacks to deliver unparalleled user experiences." })}
           >
             <img src={asset("/assets/web.png")} alt="Web Dev" className="w-[70px] h-[70px] rounded-full object-cover border-2 border-[#00e5ff] shadow-[0_0_20px_rgba(0,229,255,0.5)] group-hover:scale-125 group-hover:shadow-[0_0_40px_rgba(0,229,255,1)] transition-all" />
@@ -34,11 +34,11 @@ export default function OrbitalSystem() {
 
         <div
           className="absolute top-1/2 left-1/2 border border-white/10 rounded-full w-[450px] h-[450px] pointer-events-none"
-          style={{ transform: "translate(-50%, -50%)", animation: `spin 30s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
+          style={{ transform: "translate(-50%, -50%)", animation: `orbit-spin 30s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
         >
           <div
             className="absolute top-0 left-1/2 cursor-pointer group pointer-events-auto"
-            style={{ transform: "translate(-50%, -50%)", animation: `anti-spin 30s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
+            style={{ transform: "translate(-50%, -50%)", animation: `orbit-anti-spin 30s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
             onClick={() => setModalData({ title: "Mobile App Development", desc: "Native and cross-platform mobile applications designed with stunning UI/UX that engage users and drive business growth." })}
           >
             <img src={asset("/assets/app.png")} alt="App Dev" className="w-[70px] h-[70px] rounded-full object-cover border-2 border-[#00e5ff] shadow-[0_0_20px_rgba(0,229,255,0.5)] group-hover:scale-125 group-hover:shadow-[0_0_40px_rgba(0,229,255,1)] transition-all" />
@@ -47,11 +47,11 @@ export default function OrbitalSystem() {
 
         <div
           className="absolute top-1/2 left-1/2 border border-white/10 rounded-full w-[600px] h-[600px] pointer-events-none"
-          style={{ transform: "translate(-50%, -50%)", animation: `spin 40s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
+          style={{ transform: "translate(-50%, -50%)", animation: `orbit-spin 40s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
         >
           <div
             className="absolute top-0 left-1/2 cursor-pointer group pointer-events-auto"
-            style={{ transform: "translate(-50%, -50%)", animation: `anti-spin 40s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
+            style={{ transform: "translate(-50%, -50%)", animation: `orbit-anti-spin 40s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
             onClick={() => setModalData({ title: "Cloud & AI Solutions", desc: "Scalable, secure, and robust enterprise software, cloud architecture, and AI-driven solutions." })}
           >
             <img src={asset("/assets/software.png")} alt="Software Dev" className="w-[70px] h-[70px] rounded-full object-cover border-2 border-[#00e5ff] shadow-[0_0_20px_rgba(0,229,255,0.5)] group-hover:scale-125 group-hover:shadow-[0_0_40px_rgba(0,229,255,1)] transition-all" />
