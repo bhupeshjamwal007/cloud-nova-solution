@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn, asset } from "@/lib/utils";
 import { X } from "lucide-react";
 
 export default function OrbitalSystem() {
@@ -28,7 +28,7 @@ export default function OrbitalSystem() {
             style={{ transform: "translate(-50%, -50%)", animation: `anti-spin 20s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
             onClick={() => setModalData({ title: "Web Development", desc: "We create high-performance, cinematic websites leveraging modern stacks to deliver unparalleled user experiences." })}
           >
-            <img src="/assets/web.png" alt="Web Dev" className="w-[70px] h-[70px] rounded-full object-cover border-2 border-[#00e5ff] shadow-[0_0_20px_rgba(0,229,255,0.5)] group-hover:scale-125 group-hover:shadow-[0_0_40px_rgba(0,229,255,1)] transition-all" />
+            <img src={asset("/assets/web.png")} alt="Web Dev" className="w-[70px] h-[70px] rounded-full object-cover border-2 border-[#00e5ff] shadow-[0_0_20px_rgba(0,229,255,0.5)] group-hover:scale-125 group-hover:shadow-[0_0_40px_rgba(0,229,255,1)] transition-all" />
           </div>
         </div>
 
@@ -41,7 +41,7 @@ export default function OrbitalSystem() {
             style={{ transform: "translate(-50%, -50%)", animation: `anti-spin 30s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
             onClick={() => setModalData({ title: "Mobile App Development", desc: "Native and cross-platform mobile applications designed with stunning UI/UX that engage users and drive business growth." })}
           >
-            <img src="/assets/app.png" alt="App Dev" className="w-[70px] h-[70px] rounded-full object-cover border-2 border-[#00e5ff] shadow-[0_0_20px_rgba(0,229,255,0.5)] group-hover:scale-125 group-hover:shadow-[0_0_40px_rgba(0,229,255,1)] transition-all" />
+            <img src={asset("/assets/app.png")} alt="App Dev" className="w-[70px] h-[70px] rounded-full object-cover border-2 border-[#00e5ff] shadow-[0_0_20px_rgba(0,229,255,0.5)] group-hover:scale-125 group-hover:shadow-[0_0_40px_rgba(0,229,255,1)] transition-all" />
           </div>
         </div>
 
@@ -54,7 +54,7 @@ export default function OrbitalSystem() {
             style={{ transform: "translate(-50%, -50%)", animation: `anti-spin 40s linear infinite`, animationPlayState: isPaused ? "paused" : "running" }}
             onClick={() => setModalData({ title: "Cloud & AI Solutions", desc: "Scalable, secure, and robust enterprise software, cloud architecture, and AI-driven solutions." })}
           >
-            <img src="/assets/software.png" alt="Software Dev" className="w-[70px] h-[70px] rounded-full object-cover border-2 border-[#00e5ff] shadow-[0_0_20px_rgba(0,229,255,0.5)] group-hover:scale-125 group-hover:shadow-[0_0_40px_rgba(0,229,255,1)] transition-all" />
+            <img src={asset("/assets/software.png")} alt="Software Dev" className="w-[70px] h-[70px] rounded-full object-cover border-2 border-[#00e5ff] shadow-[0_0_20px_rgba(0,229,255,0.5)] group-hover:scale-125 group-hover:shadow-[0_0_40px_rgba(0,229,255,1)] transition-all" />
           </div>
         </div>
       </div>

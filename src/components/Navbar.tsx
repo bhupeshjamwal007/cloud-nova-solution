@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { asset } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
 import { useLenis } from "lenis/react";
 
@@ -36,7 +37,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full px-[5%] py-6 flex justify-between items-center z-50 bg-gradient-to-b from-[#030303e6] to-transparent">
       <Link href="/" className="font-bold text-2xl tracking-[2px] flex items-center gap-4 hover:opacity-80 transition-opacity">
-        <img src="/assets/logo.png" alt="Logo" className="h-16 w-auto object-contain drop-shadow-[0_0_10px_rgba(0,229,255,0.5)]" />
+        <img src={asset("/assets/logo.png")} alt="Logo" className="h-16 w-auto object-contain drop-shadow-[0_0_10px_rgba(0,229,255,0.5)]" />
         CLOUD NOVA SOLUTIONS
       </Link>
       <ul className="flex list-none gap-8">

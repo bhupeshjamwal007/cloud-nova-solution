@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { asset } from "@/lib/utils";
 
 export default function StickyScrollGallery() {
   return (
@@ -28,13 +29,14 @@ export default function StickyScrollGallery() {
               "/assets/portfolio_left_5.png",
             ].map((src, i) => {
               const isVideo = src.match(/\.(mp4|webm|ogg)$/i);
+              const assetSrc = asset(src);
               const className = "transition-all duration-300 w-full h-[24rem] xl:h-[30rem] align-bottom object-cover rounded-xl border border-white/10 hover:border-[#00e5ff]/50 hover:shadow-[0_0_30px_rgba(0,229,255,0.3)]";
               return (
                 <figure key={i} className="w-full">
                   {isVideo ? (
-                    <video src={src} autoPlay loop muted playsInline className={className} />
+                    <video src={assetSrc} autoPlay loop muted playsInline className={className} />
                   ) : (
-                    <img src={src} alt={`Portfolio Left ${i}`} className={className} />
+                    <img src={assetSrc} alt={`Portfolio Left ${i}`} className={className} />
                   )}
                 </figure>
               );
@@ -49,13 +51,14 @@ export default function StickyScrollGallery() {
               "/assets/portfolio_video_3.mp4",
             ].map((src, i) => {
               const isVideo = src.match(/\.(mp4|webm|ogg)$/i);
+              const assetSrc = asset(src);
               const className = "transition-all duration-300 h-full w-full align-bottom object-cover rounded-xl border border-white/10 hover:border-[#ff00ea]/50 hover:shadow-[0_0_30px_rgba(255,0,234,0.3)]";
               return (
                 <figure key={i} className="w-full h-full">
                   {isVideo ? (
-                    <video src={src} autoPlay loop muted playsInline className={className} />
+                    <video src={assetSrc} autoPlay loop muted playsInline className={className} />
                   ) : (
-                    <img src={src} alt={`Portfolio Sticky ${i}`} className={className} />
+                    <img src={assetSrc} alt={`Portfolio Sticky ${i}`} className={className} />
                   )}
                 </figure>
               );
@@ -71,13 +74,14 @@ export default function StickyScrollGallery() {
               "/assets/portfolio_right_4.png",
             ].map((src, i) => {
               const isVideo = src.match(/\.(mp4|webm|ogg)$/i);
+              const assetSrc = asset(src);
               const className = "transition-all duration-300 w-full h-[24rem] xl:h-[30rem] align-bottom object-cover rounded-xl border border-white/10 hover:border-[#00e5ff]/50 hover:shadow-[0_0_30px_rgba(0,229,255,0.3)]";
               return (
                 <figure key={i} className="w-full">
                   {isVideo ? (
-                    <video src={src} autoPlay loop muted playsInline className={className} />
+                    <video src={assetSrc} autoPlay loop muted playsInline className={className} />
                   ) : (
-                    <img src={src} alt={`Portfolio Right ${i}`} className={className} />
+                    <img src={assetSrc} alt={`Portfolio Right ${i}`} className={className} />
                   )}
                 </figure>
               );

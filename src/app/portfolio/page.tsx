@@ -1,37 +1,37 @@
 'use client';
 import React from 'react';
-import { cn } from '@/lib/utils';
+import { cn, asset } from '@/lib/utils';
 import { ZoomParallax } from "@/components/ui/zoom-parallax";
 
 export default function PortfolioPage() {
 	// Let's use some cool tech-themed Unsplash images for the portfolio
 	const images = [
 		{
-			src: '/assets/portfolio_1.mp4',
+			src: asset('/assets/portfolio_1.png'),
 			alt: 'Portfolio Project 1',
 		},
 		{
-			src: '/assets/portfolio_2.png',
+			src: asset('/assets/portfolio_2.png'),
 			alt: 'Portfolio Project 2',
 		},
 		{
-			src: '/assets/portfolio_3.png',
+			src: asset('/assets/portfolio_3.png'),
 			alt: 'Portfolio Project 3',
 		},
 		{
-			src: '/assets/portfolio_4.png',
+			src: asset('/assets/portfolio_4.png'),
 			alt: 'Portfolio Project 4',
 		},
 		{
-			src: '/assets/portfolio_5.png',
+			src: asset('/assets/portfolio_5.png'),
 			alt: 'Portfolio Project 5',
 		},
 		{
-			src: '/assets/portfolio_6.png',
+			src: asset('/assets/portfolio_6.png'),
 			alt: 'Portfolio Project 6',
 		},
 		{
-			src: '/assets/portfolio_7.png',
+			src: asset('/assets/portfolio_7.png'),
 			alt: 'Portfolio Project 7',
 		},
 	];
