@@ -41,7 +41,8 @@ jobs:
           # CHANGE THIS PATH BASED ON YOUR TOOL:
           # If you used Create React App, leave it as './build'
           # If you used Vite, change it to './dist'
-          path: './build' 
+          # Since we are using Next.js with static export, the path is './out'
+          path: './out' 
 
   deploy:
     environment:
